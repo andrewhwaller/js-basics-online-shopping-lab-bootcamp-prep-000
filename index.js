@@ -19,6 +19,14 @@ function addToCart(item) {
   return `${item.itemName} has been added to your cart.`
 }
 
+function generateCartItem() {
+  var price = Math.floor(Math.random() * 101)
+  var item = new Object({
+    itemName: item,
+    itemPrice: price
+  });
+}
+
 function viewCart() {
   if (cart.length === 0) {
     return "Your shopping cart is empty."
