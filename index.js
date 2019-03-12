@@ -21,7 +21,8 @@ function addToCart(item) {
 
 function viewCart() {
   if (getCart().length === 0) {
-    "Your shopping cart is empty." : generateCartDescription()
+    return "Your shopping cart is empty."
+    generateCartDescription()
   }
 }
 
