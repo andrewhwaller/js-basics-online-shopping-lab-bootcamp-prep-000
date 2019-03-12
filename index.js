@@ -26,7 +26,7 @@ function viewCart() {
     }
     else {
       setCart()
-      for (var i = 0; i < cart.length; i++) {
+      for (var i = 0; i < c.length; i++) {
         return "In your cart, you have " + `${item} + "at" + ${item} + ","`
       }
     }
