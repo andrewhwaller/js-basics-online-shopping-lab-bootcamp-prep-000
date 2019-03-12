@@ -15,7 +15,7 @@ function addToCart(item) {
     itemName: item,
     itemPrice: price
   });
-  getCart().push(item);
+  cart.push(item);
   return `${item.itemName} has been added to your cart.`
 }
 
@@ -23,13 +23,12 @@ function viewCart() {
 
   if (cart.length === 0) {
     return "Your shopping cart is empty."
-    } else {
+    } 
+    else {
       var cartDescription = 'In your cart, you have '
-      for (item in cart) {
-        return `In your cart, you have ${item} at ${$price}.`
-        }
-      }
-}
+      for (var i = 0; i < cart.length; i++) {
+        cart[i]}
+}}
 
 function total() {
 
