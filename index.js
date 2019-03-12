@@ -25,7 +25,7 @@ function viewCart() {
     } else {
       var cartDescription = 'In your cart, you have '
       for (item in cart) {
-        return `In your cart, you have ${itemName} at ${$price}.`
+        return `In your cart, you have ${item} at ${$price}.`
         }
       }
 }
