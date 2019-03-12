@@ -20,7 +20,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if (return getCart().length === 0) {
+  if (getCart().length === 0) {
     "Your shopping cart is empty." : generateCartDescription()
   }
 }
