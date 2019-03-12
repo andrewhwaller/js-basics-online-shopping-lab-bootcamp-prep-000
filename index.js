@@ -25,8 +25,8 @@ function viewCart() {
     return "Your shopping cart is empty."
     }
     else {
-      setCart()
-      for (var i = 0; i < c.length; i++) {
+      getCart()
+      for (var i = 0; i < cart.length; i++) {
         return "In your cart, you have " + `${item} + "at" + ${item} + ","`
       }
     }
