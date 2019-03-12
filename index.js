@@ -27,7 +27,7 @@ function viewCart() {
       for ([i] in cart) {
         return `In your cart, you have ${itemName} at ${$price}.`
         }
-      }  
+      }
 }
 
 function total() {
