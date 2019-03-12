@@ -35,7 +35,7 @@ function placeOrder(cardNumber) {
   // write your code here
 }
 
-function generateCartDescription() {
+function cartContents()) {
   var cartDescription = 'In your cart, you have '
   if ( getCart().length >= 1 ) {
     cartDescription += `${getCart()[0].itemName} at $${getCart()[0].itemPrice}`
