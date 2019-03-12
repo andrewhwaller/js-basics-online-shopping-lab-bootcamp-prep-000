@@ -20,11 +20,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if (getCart().length === 0) {
-    return "Your shopping cart is empty.";
-  } else {
-   cartContents()
-  }
+  return getCart().length === 0 ? "Your shopping cart is empty." : cartContents()
 }
 
 function total() {
@@ -39,7 +35,7 @@ function placeOrder(cardNumber) {
   // write your code here
 }
 
-function cartContents() {
+function cartContents()) {
   var cartDescription = 'In your cart, you have '
   if ( getCart().length >= 1 ) {
     cartDescription += `${getCart()[0].itemName} at $${getCart()[0].itemPrice}`
