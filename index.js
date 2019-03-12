@@ -25,7 +25,7 @@ function viewCart() {
     return "Your shopping cart is empty."
     } else {
       var cartDescription = 'In your cart, you have '
-      for (item in getCart()) {
+      for (item in setCart()) {
         return `In your cart, you have ${item} at ${$price}.`
         }
       }
