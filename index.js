@@ -63,3 +63,8 @@ function cartContents() {
 
   return `${cartDescription}.`
 }
+
+function total() {
+  var sum = sumUpPrices()
+  return sum
+}
