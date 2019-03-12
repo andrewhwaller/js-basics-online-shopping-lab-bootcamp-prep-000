@@ -29,7 +29,9 @@ function total() {
 
 function removeFromCart(item) {
   for (var i = 0; i < getCart().length; i++ ) {
-    array[i]
+    if (getCart()[i].itemName === item) {
+      getCart().splice([i].itemName, 1)
+    }
   }
 }
 
