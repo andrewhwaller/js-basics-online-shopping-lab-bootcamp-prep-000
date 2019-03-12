@@ -9,7 +9,7 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
+function addToCart() {
   return generateCartItem()
   getCart().push(item);
   return `${item.itemName} has been added to your cart.`
