@@ -20,7 +20,9 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  return getCart().length === 0 ? "Your shopping cart is empty." : generateCartDescription()
+  if (return getCart().length === 0) {
+    "Your shopping cart is empty." : generateCartDescription()
+  } 
 }
 
 function total() {
