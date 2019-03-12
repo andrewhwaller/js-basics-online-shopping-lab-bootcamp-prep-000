@@ -72,7 +72,6 @@ function sumUpPrices() {
   return sum
 }
 
-
 function total() {
   var sum = sumUpPrices()
   return sum
