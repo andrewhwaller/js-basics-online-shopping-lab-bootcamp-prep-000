@@ -25,10 +25,7 @@ function viewCart() {
     return "Your shopping cart is empty."
     }
     else {
-      getCart()
-      for (var i = 0; i < cart.length; i++) {
-        return "In your cart, you have lemons at $33"
-      }
+      generateCartDescription()
     }
 }
 
@@ -42,4 +39,20 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
+}
+
+function generateCartDescription() {
+  var cartDescription = 'In your cart, you have '
+  if ( getCart().length >= 1 ) {
+    cartDescription += `${getCart()[0].itemName} at $${getCart()[0].itemPrice}`
+  }
+  if ( getCart().length >= 2 ) {
+    var middleCartItemsDescription = ''
+    for (var i=1; i<getCart().length -1; i++) {
+      middleCartItemsDescription += `, ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`
+    }
+    cartDescription += `${middleCartItemsDescription}, and ${getCart()[getCart().length-1].itemName} at $${getCart()[getCart().length-1].itemPrice}`
+  }
+
+  return `${cartDescription}.`
 }
